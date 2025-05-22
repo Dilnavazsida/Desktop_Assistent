@@ -42,7 +42,12 @@ def main_process():
             say("opening youtube...")
             webbrowser.open("www.youtube.com")
         
-        
+        elif "naat sharif" in result.lower():
+                    say("playing Naat...")
+                    webbrowser.open("https://www.youtube.com/watch?v=i8YyekWrbhU&ab_channel=SafaIslamic")
+        elif "nusrat" in result.lower() or "qawwali" in result.lower():
+                    say("playing nusrat fateh khan qawali...")
+                    webbrowser.open(" https://www.youtube.com/watch?v=k9plOYAmpBU&ab_channel=Atiq%27sCreations")
 
 
 
