@@ -48,6 +48,9 @@ def main_process():
         elif "nusrat" in result.lower() or "qawwali" in result.lower():
                     say("playing nusrat fateh khan qawali...")
                     webbrowser.open(" https://www.youtube.com/watch?v=k9plOYAmpBU&ab_channel=Atiq%27sCreations")
+        elif "current time" in result:
+                    now_time = datetime.datetime.now().strftime("%H:%M")
+                    say("Current time is "+str(now_time)) 
 
 
 
