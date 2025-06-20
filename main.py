@@ -52,6 +52,17 @@ def main_process():
                     now_time = datetime.datetime.now().strftime("%H:%M")
                     say("Current time is "+str(now_time)) 
 
+         if "open" in result:
+            query = result.replace("open", "").strip()
+            say(f"Opening {query}, sir.")
+            pyautogui.press("win")  # Use 'win' for Windows
+            time.sleep(1)
+            # Wait 1 second so the Start menu loads fully.
+            pyautogui.typewrite(query)
+            time.sleep(1)
+            # Wait for the app to show up in the Start menu.
+            pyautogui.press("enter")
+
 
 
 
